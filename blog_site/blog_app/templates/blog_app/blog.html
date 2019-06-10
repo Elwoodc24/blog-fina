@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang=‘en’>
+
+	<head>
+
+		<meta charset=‘utf-8’>
+
+		<title>{{ blog.title }}</title>
+        <style>
+            body {
+                background-color: chocolate;
+            }
+            .title {
+                font-size: 36px;
+                color: gold;
+            }
+            .body {
+                font-size: 28px;
+                color: ButtonFace
+            }
+            .credits {
+                font-size: 18px;
+                color: darkcyan;
+            }
+
+        </style>
+
+	</head>
+
+	<body>
+
+		<h1 class="title">{{ blog.title }}</h1>
+
+		<h6 class="credits">by: {{ blog.author }} published: {{ blog.date }}</h6>
+
+		<p class="body">{{ blog.body }}</p>
+		<img src='{{ blog.img}}'>
+
+	</body>
+
+<html>
